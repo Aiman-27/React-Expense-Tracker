@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 //import the Global Provider
-import { GlobalProvider} from './context/GlobalState';
+import { GlobalProvider} from './context/GlobalState'
 
 // Import Components
 import { Header } from './components/Header'
