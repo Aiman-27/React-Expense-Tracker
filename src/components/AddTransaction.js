@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 export const AddTransaction = () => {
 
-    const [description, setDescription] = useState();
-    const [transactionAmount, setTransactionAmount] = useState();
+    const [description, setDescription] = useState('');
+    const [transactionAmount, setTransactionAmount] = useState(0);
 
     return (
         <div>
