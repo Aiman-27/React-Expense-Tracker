@@ -5,7 +5,7 @@ import AppReducer from './AppReducer';
 
 
 //create the initial state
-const initialstate = {
+const initialState = {
     transactions: [
         {id: 1, description: "Income 1", transactionAmount: 1000},
         {id: 2, description: "Expense 1", transactionAmount: -100},
