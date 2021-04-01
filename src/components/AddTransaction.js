@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState } from 'react'
 
 //import the Global State
 import { GlobalContext } from '../context/GlobalState';
@@ -38,7 +38,7 @@ export const AddTransaction = () => {
                     <label htmlFor="transactionamount">
                         Transaction Amount
                     </label>
-                    <input type="number" id="transactionamount" placeholder="Enter transaction amount" value={transactionAmount} onChange={(e) => setTransactionAmount(e.target.value) }/>
+                    <input type="number" id="transactionamount" placeholder="Enter transaction amount" value={transactionAmount} onChange={(e) => setTransactionAmount(e.target.value) } placeholder="Dollar Value of Transaction"/>
                 </div>
                 <button className="btn">
                     Add Transaction
