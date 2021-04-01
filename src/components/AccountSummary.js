@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext } from 'react'
 
 //import the Global State
 import { GlobalContext } from '../context/GlobalState';
