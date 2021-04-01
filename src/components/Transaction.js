@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext } from 'react'
 
 //import the Global State
 import { GlobalContext } from '../context/GlobalState';
@@ -11,7 +11,7 @@ export const Transaction = ({ transaction}) => {
     const transactionType = transaction.transactionAmount > 0 ? 'plus' : 'minus';
 
     return (
-        <li className="plus">
+        <li className={transactionType}>
             {transaction.description}
             <span>{sign}${Math.abs(transaction.transactionAmount)}</span>
             <button className="delete-btn"
