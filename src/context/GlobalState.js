@@ -16,17 +16,17 @@ export const GlobalContext = createContext(initialState);
 //create a provider for the Global Context
 export const GlobalProvider = ({ children }) => {
 
-    const [state, dispatch] = useReducer(AppReducer, initialState)
+    const [state, dispatch] = useReducer(AppReducer, initialState);
 
 
     //actions for transactions
 
-        function delTransaction(id) {
-            dispatch({
-                type: 'DELETE_TRANSACTION',
-                payload: id
-            });
-        }
+    function delTransaction(id) {
+        dispatch({
+            type: 'DELETE_TRANSACTION',
+            payload: id
+        });
+    }
 
         //add new transaction action
         function addTransaction(transaction) {
