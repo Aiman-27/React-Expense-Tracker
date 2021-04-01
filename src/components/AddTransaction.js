@@ -9,7 +9,7 @@ export const AddTransaction = () => {
     const [description, setDescription] = useState('');
     const [transactionAmount, setTransactionAmount] = useState(0);
 
-    const { AddTransaction } = useContext(GlobalContext);
+    const { addTransaction } = useContext(GlobalContext);
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -20,7 +20,7 @@ export const AddTransaction = () => {
             transactionAmount: +transactionAmount
         }
 
-        AddTransaction(newTransaction);
+        addTransaction(newTransaction);
     }
 
 
