@@ -15,12 +15,12 @@ import { AddTransaction} from './components/AddTransaction'
 function App() {
   return (
     <GlobalProvider>
-      <Header></Header>
+      <Header />
       <div className="container">
-      <Balance></Balance>
-      <AccountSummary></AccountSummary>
-      <TransactionHistory></TransactionHistory>
-      <AddTransaction></AddTransaction>
+      <Balance />
+      <AccountSummary />
+      <TransactionHistory />
+      <AddTransaction />
       </div>
     </GlobalProvider>
   );
