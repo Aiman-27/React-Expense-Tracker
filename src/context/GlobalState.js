@@ -33,7 +33,7 @@ export const GlobalProvider = ({ children }) => {
             dispatch({
                 type: 'ADD_TRANSACTION',
                 payload:transaction
-            });
+            })
         }
 
     return (
